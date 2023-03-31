@@ -1,11 +1,11 @@
 import Navbar from './Navbar'
+import Form from './Form'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1>App</h1>
-      <p>React development has begun!</p>
+      <Form />
     </div>
   )
 }
