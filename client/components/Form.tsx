@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Form() {
+export default function Form(props) {
   const [time, setTime] = useState('0')
   const [activity, setActivity] = useState('')
   const [form, setForm] = useState({ time: '', activity: '' })
@@ -24,6 +24,7 @@ export default function Form() {
       setForm({ time: time, activity: activity })
       setMessage('')
       setForm({ time: '', activity: '' })
+      props.pageChange('card')
     }
   }
 

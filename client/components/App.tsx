@@ -1,11 +1,11 @@
 import Navbar from './Navbar'
-import Form from './Form'
+import Home from './Home'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Form />
+      <Home />
     </div>
   )
 }
