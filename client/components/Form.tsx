@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 export default function Form(props) {
   const [time, setTime] = useState('0')
-  const [activity, setActivity] = useState('')
-  const [form, setForm] = useState({ time: '', activity: '' })
+  const [type, setType] = useState('')
+  const [form, setForm] = useState({ time: '', type: '' })
   const [message, setMessage] = useState('')
   const [page, setPage] = useState('form')
 
@@ -12,18 +12,17 @@ export default function Form(props) {
   }
 
   function handleActivityChange(event) {
-    setActivity(event.target.value)
+    setType(event.target.value)
   }
 
   async function handleSubmit(event) {
     event.preventDefault()
-    console.log(activity)
-    if (time == '0' || activity == '') {
+    if (time == '0' || type == '') {
       setMessage('Please select both options')
     } else {
-      setForm({ time: time, activity: activity })
       setMessage('')
-      setForm({ time: '', activity: '' })
+      setForm({ time: '', type: '' })
+      props.getSelection({ time: time, type: type })
       props.pageChange('card')
     }
   }
@@ -56,7 +55,7 @@ export default function Form(props) {
         <button type="submit">Submit</button>
       </form>
       <p>Selected time: {time}</p>
-      <p>Selected activity: {activity}</p>
+      <p>Selected activity: {type}</p>
       <p>{message}</p>
     </>
   )
