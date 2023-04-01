@@ -1,4 +1,9 @@
+import { useEffect, useState } from 'react'
+import { setConstantValue } from 'typescript'
+
 export default function Card(props) {
+  const [activity, setActivity] = useState({})
+
   const { activities } = require('../../activities')
   const newArr = []
   for (let i = 0; i < activities.length; i++) {
@@ -9,7 +14,10 @@ export default function Card(props) {
       newArr.push(activities[i])
     }
   }
-  const randNum = Math.floor(Math.random() * newArr.length)
+
+  useEffect(() => {
+    setActivity(newArr[Math.floor(Math.random() * newArr.length)])
+  }, [newArr])
 
   return (
     <div>
@@ -17,11 +25,11 @@ export default function Card(props) {
         Something you can {props.selection.type} in {props.selection.time}{' '}
         minutes? Why not try...
       </h1>
-      <h2>{newArr[randNum].name}</h2>
-      <h3>{newArr[randNum].description}</h3>
-      <p>Estimated time: {newArr[randNum].timeEst}</p>
-      <p>Link: {newArr[randNum].link}</p>
-      <p>Other users give it: {newArr[randNum].score}</p>
+      <h2>{activity.name}</h2>
+      <h3>{activity.description}</h3>
+      <p>Estimated time: {activity.timeEst}</p>
+      <p>Link: {activity.link}</p>
+      <p>Other users give it: {activity.score}</p>
     </div>
   )
 }
