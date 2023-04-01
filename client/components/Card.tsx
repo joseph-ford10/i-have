@@ -1,3 +1,7 @@
-export default function Card() {
-  return <h1>Hello world!</h1>
+export default function Card(props) {
+  return (
+    <h1>
+      {props.selection.time}, {props.selection.type}
+    </h1>
+  )
 }

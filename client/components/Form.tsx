@@ -22,7 +22,7 @@ export default function Form(props) {
     } else {
       setMessage('')
       setForm({ time: '', type: '' })
-      props.getSelection({ time: time, type: type })
+      props.getSelection(time, type)
       props.pageChange('card')
     }
   }

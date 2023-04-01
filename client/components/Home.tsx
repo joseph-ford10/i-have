@@ -10,8 +10,8 @@ export default function Home() {
     setPage(val)
   }
 
-  function getSelection(time, type) {
-    setSelection({ time: time, type: type })
+  function getSelection(newTime, newType) {
+    setSelection({ time: newTime, type: newType })
   }
 
   if (page == 'form') {
@@ -19,6 +19,6 @@ export default function Home() {
       <Form page={page} pageChange={pageChange} getSelection={getSelection} />
     )
   } else if (page == 'card') {
-    return <Card page={page} pageChange={pageChange} />
+    return <Card page={page} pageChange={pageChange} selection={selection} />
   }
 }
