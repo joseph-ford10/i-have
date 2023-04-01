@@ -1,5 +1,6 @@
 body {
-  background-color: #faf8f1;
+  /* background-color: #faf8f1; */
+  background-color: white;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
@@ -29,4 +30,37 @@ body {
 
 body {
   margin: 0;
+}
+
+.card-container {
+  border-style: solid;
+  border-color: black;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 5%;
+  border-width: 25px;
+}
+
+.card {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.generateNew {
+  width: 125px;
+  height: 50px;
+  margin-right: 25px;
+  border-width: 5px;
+  background-color: lightgrey;
+  border-radius: 25%;
+}
+
+.returnToSelect {
+  width: 125px;
+  height: 50px;
+  margin-left: 25px;
 }

@@ -25,8 +25,8 @@ export default function Card(props) {
   }
 
   return (
-    <>
-      <div>
+    <div className="card">
+      <div className="card-container">
         <h1>
           Something you can {props.selection.type} in {props.selection.time}{' '}
           minutes? Why not try...
@@ -37,12 +37,14 @@ export default function Card(props) {
         <p>Link: {activity.link}</p>
         <p>Other users give it: {activity.score}</p>
       </div>
-      <button onClick={handleClick} className="generateNew">
-        Don't like it? Generate another suggestion
-      </button>
-      <button onClick={handleClick} className="returnToSelect">
-        Return to selection
-      </button>
-    </>
+      <div className="buttons">
+        <button onClick={handleClick} className="generateNew">
+          Something else
+        </button>
+        <button onClick={handleClick} className="returnToSelect">
+          Select again
+        </button>
+      </div>
+    </div>
   )
 }
