@@ -1,6 +1,6 @@
 body {
   /* background-color: #faf8f1; */
-  background-color: white;
+  background-color: whitesmoke;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
@@ -63,4 +63,59 @@ body {
   width: 125px;
   height: 50px;
   margin-left: 25px;
+}
+
+.button-15 {
+  -webkit-appearance: none;
+  background-color: black;
+  height: 15px;
+  width: 30px;
+  position: absolute;
+  left: 270px;
+  top: 135px;
+}
+
+.button-30 {
+  -webkit-appearance: none;
+  background-color: black;
+  height: 30px;
+  width: 15px;
+  position: absolute;
+  left: 135px;
+  top: 270px;
+}
+
+.button-45 {
+  -webkit-appearance: none;
+  background-color: black;
+  height: 15px;
+  width: 30px;
+  position: absolute;
+  left: -5px;
+  top: 135px;
+}
+
+.button-hour {
+  -webkit-appearance: none;
+  background-color: black;
+  height: 30px;
+  width: 15px;
+  position: absolute;
+  left: 135px;
+  top: -5px;
+}
+
+.selectTime {
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-width: 10px;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-evenly;
 }
