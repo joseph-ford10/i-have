@@ -41,7 +41,7 @@ body {
   background-color: white;
   text-align: center;
   width: 35%;
-  height: 350px;
+  height: 475px;
   margin-top: 20px;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .time-button:checked {
-  background-color: yellow;
+  background-color: blue;
 }
 
 .type-button:checked {
@@ -318,4 +318,8 @@ body {
   text-decoration: underline;
   color: black;
   
+}
+
+.about-text {
+  font-size: 22px;
 }
