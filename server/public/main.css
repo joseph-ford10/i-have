@@ -35,87 +35,222 @@ body {
 .card-container {
   border-style: solid;
   border-color: black;
-  width: 50%;
-  margin-left: 25%;
   border-radius: 5%;
-  border-width: 25px;
+  border-width: 7px;
+  background-color: white;
+  text-align: center;
+  width: 35%;
+  margin-top: 20px;
 }
 
 .card {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
 }
 
-.buttons {
-  margin-top: 25px;
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-buttons {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
 }
 
 .generateNew {
-  width: 125px;
-  height: 50px;
-  margin-right: 25px;
-  border-width: 5px;
-  background-color: lightgrey;
-  border-radius: 25%;
+  -webkit-appearance: none;
+  background-color: white;
+  height: 75px;
+  width: 150px;
+  border: solid black;
+  font-weight: bold;
+  border-width: 7px;
+  border-radius: 10%;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 22px;
 }
 
 .returnToSelect {
-  width: 125px;
-  height: 50px;
-  margin-left: 25px;
+  -webkit-appearance: none;
+  background-color: white;
+  height: 75px;
+  width: 150px;
+  border: solid black;
+  font-weight: bold;
+  border-width: 7px;
+  border-radius: 10%;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 22px;
 }
 
 .button-15 {
   -webkit-appearance: none;
   background-color: black;
-  height: 15px;
-  width: 30px;
+  height: 20px;
+  width: 40px;
   position: absolute;
-  left: 270px;
-  top: 135px;
+  left: 370px;
+  top: 180px;
+  cursor: pointer;
 }
 
 .button-30 {
   -webkit-appearance: none;
   background-color: black;
-  height: 30px;
-  width: 15px;
+  height: 40px;
+  width: 20px;
   position: absolute;
-  left: 135px;
-  top: 270px;
+  left: 190px;
+  top: 360px;
+  cursor: pointer;
 }
 
 .button-45 {
   -webkit-appearance: none;
   background-color: black;
-  height: 15px;
-  width: 30px;
+  height: 20px;
+  width: 40px;
   position: absolute;
   left: -5px;
-  top: 135px;
+  top: 180px;
+  cursor: pointer;
 }
 
 .button-hour {
   -webkit-appearance: none;
   background-color: black;
-  height: 30px;
-  width: 15px;
+  height: 40px;
+  width: 20px;
   position: absolute;
-  left: 135px;
+  left: 190px;
   top: -5px;
+  cursor: pointer;
 }
+/* 
+.circle {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  left: 195px;
+  top: 180px;
+  position: absolute; 
+  border-radius: 50%;
+
+} */
 
 .selectTime {
   border-style: solid;
   border-color: black;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 410px;
+  height: 400px;
   position: relative;
-  border-width: 10px;
+  border-width: 7px;
+  background-color: white;
+}
+
+.read-button {
+  -webkit-appearance: none;
+  height: 150px;
+  width: 150px;
+  margin-top: 35px;
+  background-color: white;
+  margin-right: 25px;
+  margin-left: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url('text.png');
+  background-size: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.watch-button {
+  -webkit-appearance: none;
+  margin-top: 35px;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-left: 25px;
+  border: solid black;
+  border-width: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url('playarrow.png');
+  background-size: 145px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.do-button {
+  -webkit-appearance: none;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-top: 50px;
+  margin-right: 25px;
+  margin-left: 10px;
+  border: solid black;
+  border-width: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url('window.png');
+  background-size: 130px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.learn-button {
+  -webkit-appearance: none;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin-left: 25px;
+  border: solid black;
+  border-width: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url('question.png');
+  background-size: 145px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-inputs {
   display: flex;
   justify-content: space-evenly;
+}
+
+.select-activity-container {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.submit-button-container {
+  text-align: center;
+  position: relative;
+  bottom: -25px;
+}
+
+.submit-button {
+  -webkit-appearance: none;
+  background-color: white;
+  font-size: 22px;
+  height: 75px;
+  width: 150px;
+  border: solid black;
+  font-weight: bold;
+  border-width: 7px;
+  border-radius: 10%;
+  cursor: pointer;
 }

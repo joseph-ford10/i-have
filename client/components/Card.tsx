@@ -25,19 +25,21 @@ export default function Card(props) {
   }
 
   return (
-    <div className="card">
-      <div className="card-container">
-        <h1>
-          Something you can {props.selection.type} in {props.selection.time}{' '}
-          minutes? Why not try...
-        </h1>
-        <h2>{activity.name}</h2>
-        <h3>{activity.description}</h3>
-        <p>Estimated time: {activity.timeEst}</p>
-        <p>Link: {activity.link}</p>
-        <p>Other users give it: {activity.score}</p>
+    <>
+      <div className="card">
+        <div className="card-container">
+          <h1>
+            Something you can {props.selection.type} in {props.selection.time}{' '}
+            minutes? Why not try...
+          </h1>
+          <h2>{activity.name}</h2>
+          <h3>{activity.description}</h3>
+          <p>Estimated time: {activity.timeEst}</p>
+          <p>Link: {activity.link}</p>
+          <p>Other users give it: {activity.score}</p>
+        </div>
       </div>
-      <div className="buttons">
+      <div className="card-buttons">
         <button onClick={handleClick} className="generateNew">
           Something else
         </button>
@@ -45,6 +47,6 @@ export default function Card(props) {
           Select again
         </button>
       </div>
-    </div>
+    </>
   )
 }
