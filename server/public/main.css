@@ -292,7 +292,7 @@ body {
 }
 
 .time-button:checked {
-  background-color: blue;
+  background-color: darkgrey;
 }
 
 .type-button:checked {
