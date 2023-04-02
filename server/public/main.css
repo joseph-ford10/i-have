@@ -26,6 +26,7 @@ body {
   padding-right: 30px;
   font-size: 22px;
   font-weight: bold;
+  text-decoration: !important none;
 }
 
 body {
@@ -257,4 +258,9 @@ body {
 
 .product-name {
   font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }

@@ -5,13 +5,19 @@ export default function Navbar() {
     <ul className="navbar">
       <div className="navbar-items">
         <li className="navbar-item">
-          <Link to="/">Home</Link>
+          <Link to="/" className="link">
+            Home
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="about">About</Link>
+          <Link to="about" className="link">
+            About
+          </Link>
         </li>
         <li className="navbar-item">
-          <Link to="add">Add</Link>
+          <Link to="add" className="link">
+            Add
+          </Link>
         </li>
       </div>
     </ul>
