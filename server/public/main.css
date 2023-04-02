@@ -254,3 +254,7 @@ body {
   border-radius: 10%;
   cursor: pointer;
 }
+
+.product-name {
+  font-weight: bold;
+}
