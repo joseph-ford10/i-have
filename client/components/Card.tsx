@@ -27,7 +27,7 @@ export default function Card(props) {
   return (
     <>
       <div className="card">
-        <div className="card-container">
+        <div className="card-container-activity">
           <h1>
             Something you can {props.selection.type} in {props.selection.time}{' '}
             minutes? Why not try...

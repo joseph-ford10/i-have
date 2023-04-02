@@ -45,6 +45,18 @@ body {
   margin-top: 20px;
 }
 
+.card-container-activity {
+  border-style: solid;
+  border-color: black;
+  border-radius: 5%;
+  border-width: 7px;
+  background-color: white;
+  text-align: center;
+  width: 35%;
+  height: 375px;
+  margin-top: 20px;
+}
+
 .card {
   display: flex;
   justify-content: center;
