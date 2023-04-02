@@ -4,6 +4,7 @@ export default function Navbar() {
   return (
     <ul className="navbar">
       <div className="navbar-items">
+        <li className="navbar-item logo">I'VE GOT</li>
         <li className="navbar-item">
           <Link to="/" className="link">
             Home

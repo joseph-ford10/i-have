@@ -41,6 +41,7 @@ body {
   background-color: white;
   text-align: center;
   width: 35%;
+  height: 350px;
   margin-top: 20px;
 }
 
@@ -95,7 +96,7 @@ body {
   height: 20px;
   width: 40px;
   position: absolute;
-  left: 370px;
+  left: 365px;
   top: 180px;
   cursor: pointer;
 }
@@ -107,7 +108,7 @@ body {
   width: 20px;
   position: absolute;
   left: 190px;
-  top: 360px;
+  top: 357px;
   cursor: pointer;
 }
 
@@ -153,6 +154,7 @@ body {
   position: relative;
   border-width: 7px;
   background-color: white;
+  z-index: 20;
 }
 
 .read-button {
@@ -256,6 +258,10 @@ body {
   cursor: pointer;
 }
 
+.submit-button:hover {
+  background-color: lightgrey;
+}
+
 .product-name {
   font-weight: bold;
 }
@@ -263,4 +269,53 @@ body {
 .link {
   text-decoration: none;
   color: black;
+}
+
+.link:hover {
+  color: white;
+}
+
+.time-button {
+  z-index: 0;
+}
+
+.time-button:checked {
+  background-color: yellow;
+}
+
+.type-button:checked {
+  border-color: yellow;
+}
+
+.generateNew:hover {
+  background-color: lightgrey;
+}
+
+.returnToSelect:hover{
+  background-color:lightgrey;
+}
+
+.activity-description {
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.activity-name {
+  margin-bottom: 0px;
+}
+
+.logo {
+  border: solid grey;
+  padding: 0;
+  color: grey;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 1px;
+}
+
+.activity-link {
+  text-decoration: underline;
+  color: black;
+  
 }

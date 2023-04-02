@@ -32,11 +32,14 @@ export default function Card(props) {
             Something you can {props.selection.type} in {props.selection.time}{' '}
             minutes? Why not try...
           </h1>
-          <h2>{activity.name}</h2>
-          <h3>{activity.description}</h3>
+          <h2 className="activity-name">{activity.name}</h2>
+          <h3 className="activity-description">{activity.description}</h3>
           <p>Estimated time: {activity.timeEst}</p>
-          <p>Link: {activity.link}</p>
-          <p>Other users give it: {activity.score}</p>
+          <p>
+            <a href={activity.link} className="activity-link">
+              {activity.type} it here
+            </a>
+          </p>
         </div>
       </div>
       <div className="card-buttons">

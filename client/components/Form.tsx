@@ -80,7 +80,7 @@ export default function Form(props) {
                 id="15"
                 name="time-select"
                 value="15"
-                className="button-15"
+                className="button-15 time-button"
                 onMouseOver={mouseOverTime}
                 onClick={handleTimeChange}
                 onMouseLeave={mouseLeaveTime}
@@ -91,7 +91,7 @@ export default function Form(props) {
                 id="30"
                 name="time-select"
                 value="30"
-                className="button-30"
+                className="button-30 time-button"
                 onMouseOver={mouseOverTime}
                 onClick={handleTimeChange}
                 onMouseLeave={mouseLeaveTime}
@@ -102,7 +102,7 @@ export default function Form(props) {
                 id="45"
                 name="time-select"
                 value="45"
-                className="button-45"
+                className="button-45 time-button"
                 onMouseOver={mouseOverTime}
                 onClick={handleTimeChange}
                 onMouseLeave={mouseLeaveTime}
@@ -113,7 +113,7 @@ export default function Form(props) {
                 id="hour"
                 name="time-select"
                 value="hour"
-                className="button-hour"
+                className="button-hour time-button"
                 onMouseOver={mouseOverTime}
                 onClick={handleTimeChange}
                 onMouseLeave={mouseLeaveTime}
@@ -129,7 +129,7 @@ export default function Form(props) {
                 id="read"
                 name="activity-select"
                 value="read"
-                className="read-button"
+                className="read-button type-button"
                 onMouseOver={mouseOverActivity}
                 onClick={handleActivityChange}
                 onMouseLeave={mouseLeaveActivity}
@@ -140,7 +140,7 @@ export default function Form(props) {
                 id="watch"
                 name="activity-select"
                 value="watch"
-                className="watch-button"
+                className="watch-button type-button"
                 onMouseOver={mouseOverActivity}
                 onClick={handleActivityChange}
                 onMouseLeave={mouseLeaveActivity}
@@ -151,7 +151,7 @@ export default function Form(props) {
                 id="read"
                 name="activity-select"
                 value="do"
-                className="do-button"
+                className="do-button type-button"
                 onMouseOver={mouseOverActivity}
                 onClick={handleActivityChange}
                 onMouseLeave={mouseLeaveActivity}
@@ -162,7 +162,7 @@ export default function Form(props) {
                 id="learn"
                 name="activity-select"
                 value="learn"
-                className="learn-button"
+                className="learn-button type-button"
                 onMouseOver={mouseOverActivity}
                 onClick={handleActivityChange}
                 onMouseLeave={mouseLeaveActivity}
